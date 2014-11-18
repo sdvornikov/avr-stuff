@@ -6,7 +6,7 @@ void setup()
 {
   pinMode(LED_PIN, OUTPUT);
     vw_set_ptt_inverted(true);  // Required by the RF module=
-    vw_setup(2000);            // bps connection speed
+    vw_setup(1000);            // bps connection speed
     vw_set_tx_pin(0);         // Arduino pin to connect the receiver data pin
     vw_set_ptt_pin(1);
     vw_set_rx_pin(3); 

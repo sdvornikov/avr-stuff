@@ -4,7 +4,7 @@ void setup()
 {
     Serial.begin(9600);          // Configure the serial connection to the computer
     vw_set_ptt_inverted(true);  // Required by the RF module
-    vw_setup(2000/8);            // bps connection speed - divided by 8 to work with ATtiny45 (programmed for 8Mhz)
+    vw_setup(1000);            // bps connection speed - divided by 8 to work with ATtiny45 (programmed for 8Mhz)
     vw_set_rx_pin(3);         // Arduino pin to connect the receiver data pin
     vw_rx_start();           // Start the receiver
 }
